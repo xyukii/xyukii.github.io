@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+  Code Made By Yukii
+  Youtube: HA3 Virtual
+  Instagram: @ha3_virtual
+  -->
+
+    <!-- Readme! -->
+  <!-- This Method is just only can be used, if u send this massage to Whatsapp -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {width: 120px; margin: auto; display: flex; justify-content: space-between;}
+
+      button {
+        padding: 5px 7px;
+      }
+      body: black;
+    </style>
+    <title>Just for (name) &#129505</title>
+  </head>
+  <body style="text-align: center">
+    <img src="https://i.pinimg.com/originals/dd/63/8c/dd638c78c8c1f58838fc02f33daf0210.jpg" alt="Yukii" style="height: 280px" />
+    <h1>Hai Cutiee~</h1>
+    <h2>Do You Wanna be My Girlfriend?</h2>
+    <div>
+      <button onclick="mau()">Yeah!</button>
+      <button onmouseover="gak(this)">Nope</button>
+    </div>
+
+        <script>
+      function mau() {
+        alert("Makasih ya udah mau nerima aku jadi pacar kamu :)");
+        alert("I Love You");
+        alert("Kirim jawabannya ke WA aku ya");
+
+        location.assign("https://api.whatsapp.com/send?text=Sure%20i%20wanna%20be%20ur%20gf%20<3");
+      }
+      function gak(ini) {
+        ini.style.position = "absolute";
+        ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+        ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+      }
+    </script>
+
+  </body>
+</html>
