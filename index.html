@@ -1,38 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Yukii Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            width: 48%;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>A Yukii's Work</h1>
-  </header>
+    <header>
+        <h1>Portofolio Saya</h1>
+    </header>
 
-  <container>
-    <h2>About Me</h2>
-    <p>Write a brief introduction about yourself and your experience as a web programmer.</p>
+    <section>
+        <h2>Tentang Saya</h2>
+        <p>Selamat datang di halaman portofolio saya. Saya adalah seorang pengembang web dengan minat pada teknologi terkini. Berikut ini beberapa proyek yang telah saya kerjakan:</p>
+    </section>
 
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of Project 1</p>
-      <p><a href="#">View Project</a></p>
-    </div>
+    <section>
+        <h2>Proyek Terbaru</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="Proyek 1">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi singkat tentang proyek 1.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Proyek 2">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi singkat tentang proyek 2.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of Project 2</p>
-      <p><a href="#">View Project</a></p>
-    </div>
+    <footer>
+        <p>&copy; 2023 Portofolio Saya. Dibuat dengan ❤️</p>
+    </footer>
 
-    <!-- Add more projects as needed -->
-
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
-    <p>Phone: 123-456-7890</p>
-  </container>
+    <script>
+        // Jika Anda ingin menambahkan logika JavaScript, Anda dapat menambahkannya di sini.
+    </script>
 </body>
 </html>
